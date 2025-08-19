@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Checkout-main
       uses: actions/checkout@v5.0.0
+    - name: code count
+      run: wc -l helloworld.js > /tmp/linesofcode.txt
     - name: Send email
       uses: devellany/send-mail@v1.0.2
       with:
@@ -20,6 +22,6 @@ jobs:
         from: ${{secrets.MAIL_ADDRESS}}
         to: examencloudsystemencedric@gmail.com
         subject: mail title.
-        body: test
+        body: fiel://./tmp/linesofcode.txt
         contentType: text/plain
 

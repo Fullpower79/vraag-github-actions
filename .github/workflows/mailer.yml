@@ -11,7 +11,7 @@ jobs:
     - name: Checkout-main
       uses: actions/checkout@v5.0.0
     - name: code count
-      run: wc -l ./app.js > /tmp/linesofcode.txt
+      run: wc -l ./app.js > ./linesofcode.txt
     - name: Send email
       uses: devellany/send-mail@v1.0.2
       with:

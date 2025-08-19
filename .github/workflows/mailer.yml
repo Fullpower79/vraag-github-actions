@@ -21,6 +21,6 @@ jobs:
         from: ${{secrets.MAIL_ADDRESS}}
         to: examencloudsystemencedric@gmail.com
         subject: mail title.
-        body: fiel://./tmp/linesofcode.txt
+        body: file://./linesofcode.txt
         contentType: text/plain
-        attachments: file://linesofcode.txt
+        attachments: file://./linesofcode.txt

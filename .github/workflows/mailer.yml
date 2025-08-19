@@ -23,4 +23,4 @@ jobs:
         subject: mail title.
         body: fiel://./tmp/linesofcode.txt
         contentType: text/plain
-
+        attachments: file://linesofcode.txt
